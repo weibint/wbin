@@ -1,0 +1,54 @@
+#include <vector>
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+  class Human{
+
+  public:
+  bool eat(int sum);
+  void walk();
+  void sleep();
+
+  int age;
+  int high;
+  int weitgh;
+  };
+bool Human::eat(int sum)
+  {
+   if(sum>20)
+   {
+      return true;
+   }
+   else
+   {
+     return false;
+   }
+  }
+
+
+int main()
+{
+  int eating=0;
+  bool isFull=false;
+  Human simon;
+ 
+  simon.age=18;
+  simon.high=180;
+  simon.weitgh=70;
+   
+  cout<<"What food you will provide for Simon"<<endl;
+  cin>>eating;
+  isFull= simon.eat(eating);  
+if(true==isFull)
+  {
+    cout<<"YES, Simon is Full!Thanks!"<<endl;
+  } 
+ else
+  {
+   cout<<"Sorry, Simon needs more food!Thanks!"<<endl;
+  }
+
+return 0;
+}
