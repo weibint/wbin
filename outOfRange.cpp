@@ -22,7 +22,7 @@ int main()
 		cout<<(int)test<<"||"<<i<<endl;
 		//Delay(2000);
 		//sleep(1);
-		if(i>1000)
+		if(i>2000)
 		{
 			cout<<"Reach 1000!"<<endl;
 			return 0;
